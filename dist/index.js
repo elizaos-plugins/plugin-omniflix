@@ -165,6 +165,7 @@ var balance_default = [
 // src/actions/bank/balance.ts
 var GetBalanceAction = class {
   async getBalance(runtime, message, _state) {
+    var _a, _b;
     try {
       let rpcEndpoint = runtime.getSetting("rpcEndpoint") || process.env.OMNIFLIX_RPC_ENDPOINT;
       if (!rpcEndpoint) {
@@ -176,7 +177,7 @@ var GetBalanceAction = class {
         _state
       );
       const client = await wallet.getClient();
-      const addressMatch = message.content?.text?.match(
+      const addressMatch = (_b = (_a = message.content) == null ? void 0 : _a.text) == null ? void 0 : _b.match(
         /omniflix[a-zA-Z0-9]{39}/
       );
       let address;
@@ -748,8 +749,9 @@ var stake_balance_default = [
 // src/actions/bank/stake_balance.ts
 var GetStakeBalanceAction = class {
   async getStakedBalance(runtime, message, state) {
+    var _a, _b;
     try {
-      const messageText = message.content?.text?.toLowerCase() || "";
+      const messageText = ((_b = (_a = message.content) == null ? void 0 : _a.text) == null ? void 0 : _b.toLowerCase()) || "";
       const addressMatch = messageText.match(/omniflix[a-zA-Z0-9]{39}/);
       let queryAddress;
       if (addressMatch) {
@@ -2704,10 +2706,11 @@ var VoteOnProposalAction = class {
   }
 };
 var buildVoteOnProposalContent = async (runtime, message, state) => {
+  var _a, _b;
   if (!state) {
     state = await runtime.composeState(message);
   }
-  const proposalMatch = message.content?.text?.match(/proposal[^\d]*(\d+)/i);
+  const proposalMatch = (_b = (_a = message.content) == null ? void 0 : _a.text) == null ? void 0 : _b.match(/proposal[^\d]*(\d+)/i);
   if (!proposalMatch) {
     throw new Error("No proposal ID found in message");
   }
