@@ -10,7 +10,7 @@ import {
 } from "@elizaos/core";
 import { WalletProvider, walletProvider } from "../../providers/wallet.ts";
 import { GovProvider } from "../../providers/gov.ts";
-import { VoteOption } from "cosmjs-types/cosmos/gov/v1beta1/gov";
+import { VoteOption } from "@omniflixnetwork/omniflixjs/cosmos/gov/v1beta1/gov";
 import voteOnProposalExamples from "../../action_examples/gov/vote_on_proposal.ts";
 
 export interface VoteOnProposalContent extends Content {
