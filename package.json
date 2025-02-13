@@ -1,5 +1,5 @@
 {
-    "name": "@elizaos/plugin-omniflix",
+    "name": "@elizaos-plugins/plugin-omniflix",
     "version": "0.1.9",
     "main": "dist/index.js",
     "type": "module",
@@ -9,7 +9,6 @@
         "@cosmjs/proto-signing": "^0.32.4",
         "@cosmjs/stargate": "^0.32.4",
         "@cosmjs/encoding": "^0.32.4",
-        "@elizaos/core": "workspace:*",
         "@elizaos/plugin-tee": "workspace:*",
         "@elizaos/plugin-trustdb": "workspace:*",
         "bs58": "6.0.0",
