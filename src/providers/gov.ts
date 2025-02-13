@@ -1,7 +1,7 @@
 import { elizaLogger } from "@elizaos/core";
 import { DeliverTxResponse } from "@cosmjs/stargate";
 import { WalletProvider } from "./wallet";
-import { VoteOption } from "cosmjs-types/cosmos/gov/v1beta1/gov";
+import { VoteOption } from "@omniflixnetwork/omniflixjs/cosmos/gov/v1beta1/gov";
 
 export class GovProvider {
     private wallet: WalletProvider;

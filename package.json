@@ -1,5 +1,5 @@
 {
-    "name": "@elizaos-plugins/plugin-omniflix",
+    "name": "@elizaos/plugin-omniflix",
     "version": "0.1.9",
     "main": "dist/index.js",
     "type": "module",
@@ -9,14 +9,17 @@
         "@cosmjs/proto-signing": "^0.32.4",
         "@cosmjs/stargate": "^0.32.4",
         "@cosmjs/encoding": "^0.32.4",
+        "@elizaos/core": "workspace:*",
         "@elizaos/plugin-tee": "workspace:*",
         "@elizaos/plugin-trustdb": "workspace:*",
         "bs58": "6.0.0",
         "bech32": "2.0.0",
         "cosmjs-types": "^0.8.0",
+        "@omniflixnetwork/omniflixjs": "^0.1.1",
         "node-cache": "5.1.2",
         "tsup": "8.3.5",
-        "vitest": "2.1.9"
+        "uuid": "^10.0.0",
+        "vitest": "2.1.4"
     },
     "scripts": {
         "build": "tsup --format esm --dts",
